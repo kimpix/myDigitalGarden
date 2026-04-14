@@ -1,3 +1,233 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+:root {
+  --bg-color: #e0e5ec;
+  --text-dark: #2d3436;      // Gris anthracite très lisible
+  --text-muted: #4b5563;     // Gris ardoise pour les infos secondaires
+  --shadow-light: 8px 8px 16px #bec3c9, 
+                 -8px -8px 16px #ffffff;
+  --shadow-inset: inset 4px 4px 8px #bec3c9, 
+                  inset -4px -4px 8px #ffffff;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-dark) !important; // On force le texte principal
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+// --- TITRES (Nuances de gris foncé) ---
+h1, h2, h3, h4, h5, h6 {
+  color: #1a1a1a !important; // Presque noir pour un contraste maximal
+  font-weight: 600 !important;
+  letter-spacing: -0.01em;
+  margin-top: 1.5rem;
+}
+
+// --- EXPLORER & SIDEBARS ---
+.left .explorer, .backlinks, .toc {
+  background-color: var(--bg-color) !important;
+  border-radius: 16px;
+  padding: 15px !important;
+  box-shadow: var(--shadow-light);
+  
+  // Titres des sections dans les sidebars
+  h2, button, .explorer-header {
+    color: var(--text-dark) !important;
+    font-weight: 600 !important;
+  }
+  
+  // Noms des fichiers et dossiers
+  a, span, strong {
+    color: var(--text-muted) !important;
+    font-weight: 500 !important;
+    &:hover {
+      color: #000000 !important; // Devient noir au survol
+    }
+  }
+}
+
+// --- RECHERCHE ET ÉLÉMENTS INTERACTIFS ---
+.search, .search-button {
+  background-color: var(--bg-color) !important;
+  color: var(--text-dark) !important;
+  border-radius: 10px !important;
+  box-shadow: var(--shadow-inset) !important;
+  &::placeholder {
+    color: #9ca3af;
+  }
+}
+
+// --- LIENS DANS LE TEXTE ---
+a {
+  color: #0969da !important; // Un bleu un peu plus soutenu pour la lisibilité
+  font-weight: 500;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Métadonnées (dates, tags)
+.meta, .tags a {
+  color: var(--text-muted) !important;
+  font-size: 0.9em;
+}
+
+// --- HARMONISATION DES TEXTES ET DATES ---
+
+// Le corps du texte (tes notes)
+.article, .content, p {
+  color: var(--text-dark) !important; // Gris anthracite défini plus haut
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+// Les dates et les métadonnées (en bas ou en haut des notes)
+.meta, time, .content-meta, strong, li{
+  color: #666666 !important; // Gris ciment, assez sombre pour être lu
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+// Le texte des résumés dans l'Explorer ou les listes
+.explorer-content, .description {
+  color: var(--text-muted) !important; // Gris ardoise
+}
+
+// Les citations (Blockquotes) pour l'effet de relief
+blockquote {
+  border-left: 3px solid #bec3c9 !important;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #4b5563 !important;
+  font-style: italic;
+  padding: 10px 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+// Les tags (étiquettes)
+.tags a {
+  background-color: var(--bg-color) !important;
+  color: var(--text-dark) !important;
+  box-shadow: 2px 2px 5px #bec3c9, 
+              -2px -2px 5px #ffffff;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  border: none !important;
+}
+
+// --- EFFET SKEUOMORPHIQUE POUR LES IMAGES ---
+
+img {
+  // Le cadre de l'image
+  background-color: var(--bg-color) !important;
+  border: 4px solid var(--bg-color) !important; // Un cadre de la même couleur que le fond
+  border-radius: 12px !important;
+  
+  // L'ombre portée pour soulever l'image du fond
+  box-shadow: 8px 8px 16px #bec3c9, 
+              -8px -8px 16px #ffffff !important;
+  
+  // Un peu d'espace autour pour laisser respirer l'ombre
+  margin: 20px auto !important;
+  display: block;
+  max-width: 95%;
+  
+  // Transition douce si tu veux ajouter un effet au survol
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.01); // Très léger zoom
+    box-shadow: 12px 12px 24px #bec3c9, 
+                -12px -12px 24px #ffffff !important;
+  }
+}
+
+// Pour les légendes d'images (si tu en utilises)
+figcaption {
+  color: var(--text-muted) !important;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+// --- LISIBILITÉ DU GRAPH VIEW ---
+canvas, td { background: black;}
+.graph-view {
+
+  // Cible les textes (étiquettes des nœuds)
+  text {
+    fill: #1a1a1a !important; // Noir graphite pour la visibilité
+    font-weight: 600 !important;
+    text-shadow: 0 0 2px #ffffff; // Un léger halo blanc pour détacher le texte si besoin
+  }
+
+  // Cible les lignes (liens entre les notes)
+  line {
+    stroke: #bec3c9 !important; // Gris ciment pour rester dans le style skeu
+    stroke-opacity: 0.6;
+  }
+
+  // Cible les nœuds (les petits points)
+  circle {
+    fill: var(--accent-blue) !important; // Garde le bleu pour les points
+    stroke: #ffffff !important;
+    stroke-width: 1px;
+  }
+}
+
+// --- STYLE DE LA LIGHTBOX SKEUOMORPHIQUE ---
+
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(224, 229, 236, 0.9); // Ton fond --bg-color avec opacité
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border: 10px solid #e0e5ec !important; // Cadre physique épais
+    border-radius: 20px !important;
+    box-shadow: 20px 20px 40px #bec3c9, -20px -20px 40px #ffffff !important;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 30px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+// Curseur pour indiquer que l'image est cliquable
+article img {
+  cursor: zoom-in;
+}

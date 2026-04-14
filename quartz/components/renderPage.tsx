@@ -292,6 +292,7 @@ export function renderPage(
           </Body>
         </div>
       </body>
+<script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
         .map((res) => JSResourceToScriptElement(res, true))}

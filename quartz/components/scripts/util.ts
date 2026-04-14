@@ -44,3 +44,40 @@ export async function fetchCanonical(url: URL): Promise<Response> {
   const [_, redirect] = text.match(canonicalRegex) ?? []
   return redirect ? fetch(`${new URL(redirect, url)}`) : res
 }
+
+function setupLightbox() {
+  const images = document.querySelectorAll('article img'); // On cible les images des notes
+  
+  images.forEach(img => {
+    // On évite d'ajouter l'écouteur plusieurs fois
+    if (img.getAttribute('data-lightbox')) return;
+    img.setAttribute('data-lightbox', 'true');
+    img.style.cursor = 'zoom-in';
+
+    img.addEventListener('click', () => {
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(224, 229, 236, 0.9); backdrop-filter: blur(10px);
+        display: flex; align-items: center; justify-content: center;
+        z-index: 10000; cursor: zoom-out;
+      `;
+      
+      const fullImg = document.createElement('img');
+      fullImg.src = (img as HTMLImageElement).src;
+      fullImg.style.cssText = `
+        max-width: 90%; max-height: 90%; border-radius: 20px;
+        border: 10px solid #e0e5ec;
+        box-shadow: 20px 20px 40px #bec3c9, -20px -20px 40px #ffffff;
+      `;
+
+      modal.appendChild(fullImg);
+      document.body.appendChild(modal);
+      modal.onclick = () => modal.remove();
+    });
+  });
+}
+
+// On lance au chargement initial ET à chaque changement de page Quartz
+document.addEventListener("nav", setupLightbox);
+window.addEventListener("DOMContentLoaded", setupLightbox);

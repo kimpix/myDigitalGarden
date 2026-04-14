@@ -83,6 +83,7 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
+<script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script>
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
