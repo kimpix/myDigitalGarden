@@ -22,7 +22,7 @@ publish: "true"
 ![[6F1FDTFVMZY27NCKDFKRAH4HY0.mp4]]
 
 
-<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance#counterpart-579205"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour ****** </a>
+<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania/"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour ****** </a>
 </p> </div>
 
 ![[1776101665246.png]]
@@ -75,5 +75,5 @@ publish: "true"
 
 
 
-<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance-#counterpart-579205"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour ***** </a>
+<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania/"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour ***** </a>
 <script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script></p> <div class="pixel-cursor"></div> </div>

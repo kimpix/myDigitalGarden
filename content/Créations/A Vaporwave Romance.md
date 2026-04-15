@@ -24,5 +24,5 @@ réalisé avec Suno, Kling AI et Banana - textes Kim ROSE
 > 
 > _[Signal perdu...]_
 
-<a href="https://fr.tipeee.com/a-vaporwave-romance" class="tipeee-project-card">Soutenez A Vaporwave Romance sur Tipeee</a>
+<a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania/" class="tipeee-project-card">Soutenez A Vaporwave Romance sur Tipeee</a>
 <script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script>
