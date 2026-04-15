@@ -32,7 +32,7 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"3f08965865e774f6","type":"file","file":"CHATEAU DE CRISTAL/TERMINAL_LAB/Architecture du terminal.md","x":-1000,"y":-640,"width":440,"height":460},
+		{"id":"3f08965865e774f6","type":"file","file":"CHATEAU DE CRISTAL/Terminal_laboratory/Architecture du terminal.md","x":-1000,"y":-640,"width":440,"height":460},
 		{"id":"466b6d0821d94b92","type":"file","file":"CHATEAU DE CRISTAL/Coeur/Architecture du cœur.md","x":-410,"y":-640,"width":400,"height":400},
 		{"id":"50c097588e8cc492","type":"file","file":"CHATEAU DE CRISTAL/Tour de Cristal - Transmission/Architecture de la Tour de Transmission.md","x":70,"y":-640,"width":510,"height":400},
 		{"id":"0299cce5a5c2caf1","type":"file","file":"CHATEAU DE CRISTAL/Conscience/Architecture de la conscience.md","x":-810,"y":460,"width":400,"height":400},
