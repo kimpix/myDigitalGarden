@@ -13,7 +13,7 @@ on:
 
 jobs:
   build:
-    if: ${{ github.repository == 'jackyzha0/quartz' }}
+    if: ${{ github.repository == 'myDigitalGarden' }}
     runs-on: ubuntu-latest
     steps:
       - name: Set lowercase repository owner environment variable
