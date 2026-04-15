@@ -8,7 +8,9 @@ Localisation : S'étendent à perte de vue tout autour du Château, entre les La
 Fonction : Expression pure, improvisation, liberté totale et naissance des concepts sauvages.
 
 [[Créations musicales]]
-[[Créations picturales autour de l'univers du château]]
+[[Créations images AI]]
 [[A Vaporwave Romance]]
+[[Photos]]
+
 
 <script async src="https://plugin.tipeee.com/widget.js" charset="utf-8"></script> 
