@@ -465,10 +465,10 @@ button#burger-icon {
   /* Le tiroir (drawer) de navigation */
   div.mobile-only.sidebar, 
   aside.sidebar.mobile-only,
-  .explorer-container,
+  .explorer .explorer-content,
   #quartz-body aside {
-    background-color: #f5f5f5 !important;
-    background: #f5f5f5 !important;
+    background-color:#e0e5ec!important;
+    background:#e0e5ec !important;
   }
 
   /* Pour être sûr que le texte reste lisible sur le gris clair */
