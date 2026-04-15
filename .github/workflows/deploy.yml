@@ -1,37 +1,51 @@
-name: Upload Preview Deployment
+name: Deploy Quartz
 on:
-  workflow_run:
-    workflows: ["Build Preview Deployment"]
-    types:
-      - completed
+  push:
+    branches:
+      - v4  # Assure-toi que ta branche s'appelle bien v4 (ou remplace par main)
+  workflow_dispatch:
 
 permissions:
-  actions: read
-  deployments: write
   contents: read
-  pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy-preview:
-    if: ${{ github.repository == 'myDigitalGarden' && github.event.workflow_run.conclusion == 'success' }}
+  build:
     runs-on: ubuntu-latest
-    name: Deploy Preview to Cloudflare Pages
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v7
-        id: preview-build-artifact
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          name: preview-build
-          path: build
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ github.event.workflow_run.id }}
+          fetch-depth: 0
 
-      - name: Deploy to Cloudflare Pages
-        uses: AdrianGonz97/refined-cf-pages-action@v1
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectName: quartz
-          deploymentName: Branch Preview
-          directory: ${{ steps.preview-build-artifact.outputs.download-path }}
+          node-version: 22 # On utilise la version 22 comme convenu
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps: deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
