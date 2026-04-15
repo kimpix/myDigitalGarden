@@ -460,28 +460,21 @@ button#burger-icon {
   border: 0;
 }
 
-// Forcer le fond de la barre latérale en mobile
-// Ciblage ultra-précis pour la version mobile
+/* Ciblage agressif du menu mobile */
 @media (max-width: 800px) {
-  // Le panneau qui coulisse
-  .mobile-only .explorer-container, 
-  .mobile-only aside,
-  #mobile-menu {
+  /* Le tiroir (drawer) de navigation */
+  div.mobile-only.sidebar, 
+  aside.sidebar.mobile-only,
+  .explorer-container,
+  #quartz-body aside {
     background-color: #f5f5f5 !important;
+    background: #f5f5f5 !important;
   }
 
-  // Le fond global derrière le menu quand il est ouvert
-  .sidebar.mobile {
-    background-color: #f5f5f5 !important;
-  }
-
-  // Ajustement de la couleur du texte pour le gris clair
-  .mobile-only {
-    .explorer-entry a, 
-    button, 
-    .sidebar-section-title {
-      color: #2b2b2b !important;
-    }
+  /* Pour être sûr que le texte reste lisible sur le gris clair */
+  .mobile-only .explorer-entry a, 
+  .mobile-only button#mobile-menu-button {
+    color: #1a1a1a !important;
   }
 }
 
