@@ -81,3 +81,5 @@ function setupLightbox() {
 // On lance au chargement initial ET à chaque changement de page Quartz
 document.addEventListener("nav", setupLightbox);
 window.addEventListener("DOMContentLoaded", setupLightbox);
+
+

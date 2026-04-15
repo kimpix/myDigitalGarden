@@ -1,4 +1,7 @@
+
 @use "./base.scss";
+/* Nous utilisons une police Google Font "pixel" pour le test */
+
 
 :root {
   --bg-color: #e0e5ec;
@@ -231,3 +234,210 @@ canvas, td { background: black;}
 article img {
   cursor: zoom-in;
 }
+
+/* --- RESET TOTAL DU BOUTON BURGER QUARTZ 4 --- */
+
+
+@media (max-width: 800px) {
+
+
+
+// On cible le conteneur du bouton qui a souvent ce flou/dégradé
+.sidebar.left {
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+// Ciblage précis du bouton burger de Quartz 4
+button#burger-icon {
+  // On supprime l'effet de "tache"
+  background: #232429 !important; // Un fond gris très foncé uni
+  box-shadow: none !important;
+  filter: none !important;
+  
+  // On le rend propre et net
+  border: 1px solid var(--lightgray) !important;
+  border-radius: 4px !important;
+  padding: 5px !important;
+  
+  // On force l'icône interne
+  &::before, &::after, span {
+    background-color: var(--dark) !important; // Couleur des barres
+  }
+}
+
+// Si c'est le composant de recherche qui chevauche
+.search {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  & > * {
+    filter: none !important;
+  }
+}
+
+// On s'assure que rien ne bave sur le titre
+.page-title {
+    display: none !important;
+ filter: none !important;
+  background: none !important;
+
+}
+
+
+
+  /* 1. On annule les marges et arrondis du conteneur principal */
+  .center, .page, .wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* 2. On cible spécifiquement la sidebar pour qu'elle prenne toute la largeur */
+  aside.sidebar.left {
+    width: 100vw !important; /* Prend toute la largeur de l'écran */
+    height: 100% !important;
+    margin: 0 !important;
+    padding-left: 1.2rem !important; /* Juste assez pour ne pas coller au bord gauche */
+    background-color: var(--dark) !important;
+    position: fixed; /* S'assure qu'elle reste bien en place */
+    left: 0;
+    top: 0;
+  }
+}
+
+
+/* --- IMPORTATION POLICE PIXEL (Optionnel si tu en as déjà une) --- */
+
+
+/* --- BOÎTE DE DIALOGUE AVENTURE 16-BIT --- */
+
+.adventure-box {
+  /* 1. Base et Couleurs */
+  background-color: #1a1a2e; /* Bleu très foncé, type JRPG */
+  color: #fff;
+  font-family: 'courrier new', monospace; /* Ta police Pixel */
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+/* On définit le curseur par défaut sur la boîte */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M12 24l-4 4 2 2 4-4M10 22l14-14 4 4-14 14z" fill="white" stroke="black" stroke-width="2" /></svg>'), auto;
+  
+  /* Petit effet de "rebond" quand on survole la boîte */
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    /* Curseur "Main qui pointe" lors du survol du texte ou bouton */
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M8 12h12v4H8zM12 8h8v4h-8zM4 16h20v8H4z" fill="white" stroke="black" stroke-width="2"/></svg>'), pointer;
+  }
+  
+  /* 2. La Bordure Pixel Perfect */
+  /* C'est le secret : une double bordure nette */
+  border: 4px solid #fff; /* Bordure extérieure blanche */
+  box-shadow: 
+    0 0 0 4px #1a1a2e, /* Espaceur sombre */
+    0 0 0 8px #fff,    /* Bordure intérieure blanche */
+    5px 5px 0 rgba(0,0,0,0.5); /* Ombre portée pixellisée */
+    
+  /* 3. L'alignement */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* --- LE TEXTE --- */
+.dialogue-text {
+  margin: 0 !important;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+/* --- LES ÉLÉMENTS DE DÉCORATION PIXEL --- */
+
+/* Icône de Quête (à gauche) */
+.pixel-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #f1c40f; /* Couleur Or */
+  /* On simule un pixel art simple : une étoile */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Curseur Clignotant (à droite) */
+.pixel-cursor {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  
+  /* Petit effet pixel biseauté */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 25%);
+  
+  /* Animation Clignotante */
+  animation: blink 0.8s infinite;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* --- AJUSTEMENT MOBILE --- */
+@media (max-width: 600px) {
+  .adventure-box {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-width: 2px;
+    box-shadow: 
+      0 0 0 2px #1a1a2e,
+      0 0 0 4px #fff,
+      3px 3px 0 rgba(0,0,0,0.5);
+
+  }
+  .pixel-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* --- Style de la Lightbox --- */
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  cursor: zoom-out;
+  backdrop-filter: blur(5px); /* Effet de flou moderne en fond */
+
+  img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    /* Bordure 16-bit pour l'image zoomée */
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 6px #1a1a2e, 0 20px 50px rgba(0,0,0,0.8);
+    
+    /* Animation d'apparition */
+    animation: zoomIn 0.25s ease-out;
+  }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
