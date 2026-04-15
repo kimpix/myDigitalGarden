@@ -460,3 +460,20 @@ button#burger-icon {
   border: 0;
 }
 
+// Forcer le fond de la barre latérale en mobile
+@media (max-width: $mobileBreakpoint) {
+  aside {
+    background-color: #f5f5f5 !important; // Gris très clair
+    
+    // Si tu veux aussi changer la couleur du texte pour qu'il soit lisible
+    .sidebar-section, a, p, span {
+      color: #333 !important; 
+    }
+  }
+
+  // Si c'est le menu "pop-over" (le menu qui glisse)
+  .popover {
+    background-color: #f5f5f5 !important;
+  }
+}
+
