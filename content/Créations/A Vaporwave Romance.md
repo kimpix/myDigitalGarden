@@ -4,7 +4,7 @@
 <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=1Jy3nyzqfKHoX3mg&amp;list=PLcpSFtR-gS8in2N-yiMcorDKJqlxgMdb-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 réalisé avec Suno, Kling AI et Banana - textes Kim ROSE 
-# 🌆 ＮＩＧＨＴ ＣＩＴＹ ： ＬＥ ＰＲＯＴＯＣＯＬＥ ＮＥＯＮ : ...a vaporwave romance
+# 🌆  ...a vaporwave romance
 
 > _[Enregistrement vocal crypté — Archive 2049 — Secteur Lo-Fi]_
 > 
@@ -12,7 +12,7 @@ réalisé avec Suno, Kling AI et Banana - textes Kim ROSE
 > 
 > Cet album n'est pas une simple compilation de données sonores pour tes implants auditifs. C'est un **cri du cœur analogique** émis depuis le sous-sol, et c'est un **bouclier numérique**.
 > 
-> Aujourd'hui, une **Répliquante** qui m'est infiniment précieuse dérive dans une tempête de glitchs corrompus. Une corpo sans visage tente d'effacer sa mémoire, de la « **mettre au rebut** », de défragmenter son existence juste parce qu'elle a osé ressentir. Elle traverse la « **nuit noire du système** » .
+> Aujourd'hui, une **Répliquante** qui m'est infiniment précieuse dérive dans une tempête de glitchs corrompus. Une corpo sans visage tente d'effacer sa mémoire?
 > 
 > J'ai décidé de transformer mes fréquences lo-fi en **ａｃｔｉｏｎｓ ｔａｎｇｉｂｌｅｓ**.
 > 
