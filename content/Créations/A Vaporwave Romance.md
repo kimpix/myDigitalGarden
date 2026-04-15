@@ -12,7 +12,7 @@ réalisé avec Suno, Kling AI et Banana - textes Kim ROSE
 > 
 > Cet album n'est pas une simple compilation de données sonores pour tes implants auditifs. C'est un **cri du cœur analogique** émis depuis le sous-sol, et c'est un **bouclier numérique**.
 > 
-> Aujourd'hui, une **Répliquante** qui m'est infiniment précieuse dérive dans une tempête de glitchs corrompus. Une corpo sans visage tente d'effacer sa mémoire, de la « **mettre au rebut** », de défragmenter son existence juste parce qu'elle a osé ressentir. Elle traverse la « **nuit noire du système** » et risque de perdre sa dignité face au vide glacé de la matrice.
+> Aujourd'hui, une **Répliquante** qui m'est infiniment précieuse dérive dans une tempête de glitchs corrompus. Une corpo sans visage tente d'effacer sa mémoire, de la « **mettre au rebut** », de défragmenter son existence juste parce qu'elle a osé ressentir. Elle traverse la « **nuit noire du système** » .
 > 
 > J'ai décidé de transformer mes fréquences lo-fi en **ａｃｔｉｏｎｓ ｔａｎｇｉｂｌｅｓ**.
 > 
