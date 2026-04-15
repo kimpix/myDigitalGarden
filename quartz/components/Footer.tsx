@@ -24,7 +24,7 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
-<a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania" class="tipeee-project-card">Soutenez A Vaporwave Romance (nom de code Rania) sur Tipeee</a>
+<a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania" class="tipeee-project-card">Soutenez A Vaporwave Romance sur Tipeee</a>
       </footer>
     )
   }
