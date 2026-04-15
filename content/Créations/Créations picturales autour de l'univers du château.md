@@ -22,7 +22,7 @@ publish: "true"
 ![[6F1FDTFVMZY27NCKDFKRAH4HY0.mp4]]
 
 
-<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania/"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour ****** </a>
+<div class="adventure-box"> <div class="pixel-icon"></div> <p class="dialogue-text">  <a href="https://fr.tipeee.com/a-vaporwave-romance-nom-de-code-rania/"  data-orientation="line" data-rewards="5"> Acheter 50 cartes postales pour sauver le royaume </a>
 </p> </div>
 
 ![[1776101665246.png]]
