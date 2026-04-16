@@ -8,7 +8,7 @@ publish: "true"
 [[Architecture de la Tour de Transmission|Architecture de la Tour de Transmission]]
 [[Architecture du mystère|Architecture du mystère]]
 [[Architecture du cœur|Architecture du cœur]]
-[[Architecture des Archives|Architecture des Archives]]
+[[Archives - index|Architecture des Archives]]
 
 ![[6F1FDTFVMZY27NCKDFKRAH4HY0.mp4]]
 

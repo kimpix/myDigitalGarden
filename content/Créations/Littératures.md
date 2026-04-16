@@ -4,4 +4,4 @@ Auto édition
 
 Poétique sous anxiolytique (sur demande) - recueil de poèmes
 
-[[Architecture des Archives]]
+[[Archives - index]]

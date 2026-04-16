@@ -69,7 +69,7 @@ publish: "true"
 
 
 ## Les Archives
-[[Architecture des Archives]]
+[[Archives - index]]
 
 ![[Screenshot_2026-04-12-08-03-33-54_680d03679600f7af0b4c700c6b270fe7-2.jpg]]
 
