@@ -1,0 +1,1 @@
+Un restaurant japonais. De l’eau sainte qui vient de Roumanie. Aider quelqu’un à réparer son vélo. Ma psy couche avec un homme et ça me rend jalouse. C’est Guilhem, il finit par dire « elle m’a passagé » et il a l’air en colère.

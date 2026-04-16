@@ -1,0 +1,3 @@
+la lumière des écrans se transmet de l’autre côté. Tout le monde à été informé de la nécessité de cette mise à jour et ue l’on vivra désormais dans un flux électrique permanent. (reprise de la psychose ressentie chez ma mère. Dans le rêve ça se passe d’ailleurs chez elle.
+
+Plus tard à l’intérieur d’un bar faiblement éclairé. J’attends et je me réveille dans un taxi « ha non mademoiselle vous êtes vraiment pas sympa, je vais pas pouvoir vous garder ». Là je me rappelle que je devais lui ramener son manteau qu’elle à oublié. Il répond « ha ! je connais ça ! Vous lui aurez ramené elle vous aurait dit « c’est pas à moi ». Il rigole.

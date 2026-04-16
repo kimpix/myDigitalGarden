@@ -1,0 +1,1 @@
+Je fais la queue pour aller aux toilettes puis j’y vais mais il n’y a pas de porte. Je demande à un gars à côté si je peux avoir un peu d’intimité, il m’indique d’aller un peu plus loin, je me regarde dans le miroir : je suis fluorescente/néon, couleur dominante : orange.

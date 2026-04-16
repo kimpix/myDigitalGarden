@@ -1,0 +1,1 @@
+ Nous crééons une oeuvre collective avec des gens, à la fin on était assis sur des bancs dans un couloir et les gens récitaient un « nôtre père », je ne connaissait pas les paroles par coeur. J’ai dis que les slaves n’avaient pas de dieux, on m’a demandé de quelle profession de foi était ma mère et j’ai dit « athé » du bout des lèvres.

@@ -1,0 +1,1 @@
+un cube plongé dans la lumière, semi transparent dedans composé de dalles multicolores dans un dégradé arc-en-ciel de bas vers le haut. On monte dedans, il chute très rapidement selon les lois de la gravité. De plus en plus vite passe par toutes les couleurs de l’arc-en-ciel les unes après les autres avec des sons bi-tonals. Sert de moyen d’accès à l’autre monde. Intense
