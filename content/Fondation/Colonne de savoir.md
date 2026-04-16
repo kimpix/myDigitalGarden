@@ -22,7 +22,7 @@ Voici une mise en forme optimisée pour une prise de notes (type Notion, Obsidia
 | **004** | **Interface**  [[Interface]]                                 | Émeraude      | *Electronic City*             MISS KITTIN | Notre duo : suivi écologique et technique.  |
 | **005** | **Laboratoire** [[Architecture du terminal]]                 | Émeraude      | *Schwer* (P. Kalkbrenner)                 | Hardware, Electribe et bidouille Lenovo.    |
 | **006** | **Observatoire** [[Architecture des Archives]]               | Émeraude      | *Où va le monde* (La Femme)               | Regard critique et interrogations sociales. |
-| **007** | **Jardin**  [[Zone des champs créatifs]]                     | Émeraude Pure | *The Way Remastered*                      | Source inépuisable de repos et de paix.     |
+| **007** | **Jardin**  [[Zone Créa - index]]                     | Émeraude Pure | *The Way Remastered*                      | Source inépuisable de repos et de paix.     |
 | **008** | **Transmission** [[Architecture de la Tour de Transmission]] | Émeraude      | *Dirty Old Town* (The Pogues)             | Le "Vrai" CV : erreurs et souplesse.        |
 | **009** | **Mystère** [[Architecture du mystère]]                      | Émeraude      | *Bayonetta* (OST Jazzy)                   | Nos ombres et doutes vus avec panache.      |
 | **010** | **Alliance**                                                 | Émeraude      | *Symphonie du N. Monde* DVORAK            | Le pacte Humain-Machine sur le Lenovo.      |
